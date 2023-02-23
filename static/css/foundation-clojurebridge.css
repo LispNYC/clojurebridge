@@ -1,0 +1,324 @@
+
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    background-color: #151217;
+    background-image: url("../images/clojurebridge-background-wtext.jpg");
+    background-attachment: fixed;
+    /* background-image: url("/static/images/clojurebridge.jpg"); */
+    background-repeat: no-repeat;
+    background-position: 75% 10%;
+    background-size: cover;
+    padding-top: 0px;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+}
+
+/* top bar */
+nav.top-bar {
+  position: fixed;
+  width: 100%;
+  z-index: 400;
+}
+
+nav.top-bar section.top-bar-section a {
+    font-size: 1.0rem;
+}
+
+li.toggle-topbar.menu-icon a span{
+  color: #F7DA1E
+}
+
+.top-bar .toggle-topbar.menu-icon a span::after {
+  box-shadow: 0 0 0 1px #F7DA1E, 0 7px 0 1px #F7DA1E, 0 14px 0 1px #F7DA1E;
+  color: #F7DA1E
+}
+
+nav.top-bar ul.title-area li.name a {
+    padding-left: 60px;
+    font-size: 1.3rem;
+}
+
+img.title {
+    position: absolute;
+    height: 38px;
+    z-index: 1;
+    left: 1.0rem;
+    top: 4px;
+}
+
+li a img.menuitem {
+   height: 33px;
+
+}
+
+
+ul.dropdown li a{
+  color: #F7DA1E
+}
+
+/* all panels */
+div.panel {
+    border: 0rem;
+    background-color: #e6e6e6;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black
+}
+
+a:hover {
+    color: blue;
+    cursor: pointer
+} 
+/* news/main */
+div#announcement {
+    padding-top: 1rem;
+
+}
+
+div.main.panel {
+    background-color: rgba(255,255,203,0.84);
+    /*background-color: rgba(230,230,230,0.85);*/ /* #e6 */
+border-radius: 25px;
+}
+
+/* meeting panel */
+div.meeting.panel {
+    background-color: rgba(255,255,203,0.84);
+    margin-top: 80px;
+    /*background-color: rgba(230,230,230,0.85);*/ /* #e6 */
+border-radius: 25px;
+}
+
+/* support */
+table#support {
+    background-color: #e6e6e6;
+    border: 0rem none;
+}
+
+/* news */
+table {
+    background-color: #e6e6e6;
+    border: 0rem none;
+}
+
+table tbody tr td {
+    background-color: #e6e6e6;
+    border: 0rem none;
+}
+
+td.news-icon img {
+  max-width: none; /* don't resize icon */
+}
+
+p.pager a {
+    font-size: 1.2rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+}
+
+p.pager span.pager-current {
+    font-size: 1.5rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+}
+
+/* info */
+div.info.row.show-for-medium-up {
+    padding-top: 3rem;
+}
+
+div.info.panel {
+    padding: 0.7rem;
+    /* background-color: #f9f9f9; */
+    background-color: #e6e6e6;
+}
+
+div.info.panel p {
+    font-size: 0.8rem;
+}
+
+/* navigation */
+ul.button-group.even.four-up li a.nav.tiny.round.button {
+    background-color: white;
+    foreground-color: black;
+    color: #909090;
+    font-size: 1.0rem;
+    margin-right: 1.0rem;
+}
+
+ul.button-group.even.four-up li a.nav.tiny.round.button:hover {
+    background-color: yellow;
+}
+
+/* ad */
+div.ad-panel {
+    padding: 0.5rem;
+    /* background-color: white; */
+    foreground-color: black;
+}
+
+div.ad-panel p {
+    font-size: 0.7rem;
+    color: black;
+}
+
+/* social */
+div.social.tiny.round.button {
+    margin-top: 2rem;
+    background-color: white;
+    color: #909090;
+}
+
+div.social.tiny.round.button:hover {
+    background-color: yellow;
+}
+
+div.social.tiny.round.button ul.button-group li a img {
+    padding: 0.5rem;
+}
+
+/* footer */
+div#footerLeft.about.panel {
+    font-size: 0.9rem;
+}
+
+div.footer.row {
+    margin-top: 3rem;
+}
+
+/* meetings */
+td.meeting-date {
+    width: 7rem;
+}
+
+td.meeting-video {
+    width: 100px;
+}
+
+/* jsp wiki */
+/* hide the '#' behind every anchor */
+.hashlink {
+  visibility: hidden;
+}
+
+.panel h4 {
+  margin-bottom: 0.125rem;
+  margin-top: 0.625rem;
+}
+
+p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.0rem;
+}
+
+/*organizers page*/
+
+div#organizers {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap
+}
+
+.pagetitle {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 25px
+}
+
+.byline {
+  font-size: 15px;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 20px
+}
+
+div#organizers .persona {
+  width: 200px;
+  margin: 15px;
+  text-align: center
+}
+
+div#organizers .img {
+  width: 200px;
+  height: 200px;
+  filter: grayscale(70%)
+}
+
+div#organizers .img:hover {
+  filter: grayscale(0%)
+}
+
+div#organizers .textbox {
+  margin-top: 5px
+}
+
+div#organizers a.name {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+div#organizers a:hover {
+  curson: pointer
+} 
+
+div#organizers .title {
+  font-size: 80%
+}
+
+div#codeofconduct p {
+  margin-bottom: 25px
+}
+
+div#womeninscience .women-story {
+  margin-bottom: 15px; 
+}
+
+div#womeninscience .img {
+  width: 150px;
+  height: 150px;
+}
+
+div#womeninscience .title {
+  font-weight: bold;
+  margin-bottom: 5px
+}
+
+div#womeninscience .text {
+  text-align: justify
+}
+
+div#ada p {
+  text-align: justify
+}
+
+div#ada .section {
+  margin-bottom: 25px;
+}
+
+div#ada .last-section {
+  margin-top: 45px
+}
+div#ada .title {
+  font-size: 120%;
+  font-weight: bold
+}
+span.logo-text {
+  padding-left: 10px;
+  font-weight: bold;
+  color: #F7DA1E
+}
+
+ul.navigation li a{
+  color: #F7DA1E
+}
